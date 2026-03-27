@@ -1,0 +1,32 @@
+2026-03-24T10:15:32Z INFO  auth-service User login successful user_id=8421 ip=192.168.1.10
+2026-03-24T10:15:35Z WARN  auth-service Failed login attempt user_id=8421 ip=192.168.1.10 reason=invalid_password
+2026-03-24T10:15:40Z ERROR payment-service Payment processing failed order_id=9921 amount=49.99 error=timeout
+2026-03-24T10:15:41Z INFO  payment-service Retrying payment order_id=9921
+2026-03-24T10:15:42Z INFO  payment-service Payment processed successfully order_id=9921 amount=49.99
+2026-03-24T10:16:01Z DEBUG inventory-service Checking stock item_id=554 quantity=12
+2026-03-24T10:16:05Z INFO  inventory-service Stock updated item_id=554 quantity=10
+2026-03-24T10:16:10Z ERROR inventory-service Failed to update stock item_id=554 error=database_locked
+2026-03-24T10:16:12Z INFO  auth-service User logout user_id=8421
+2026-03-24T10:16:20Z WARN  api-gateway Slow response detected path=/api/orders duration_ms=1200
+2026-03-24T10:16:25Z INFO  api-gateway Request completed path=/api/orders status=200 duration_ms=230
+2026-03-24T10:16:30Z ERROR api-gateway Request failed path=/api/orders status=500
+2026-03-24T10:16:35Z DEBUG cache-service Cache miss key=user_8421
+2026-03-24T10:16:36Z DEBUG cache-service Cache set key=user_8421 ttl=300
+2026-03-24T10:16:40Z INFO  notification-service Email sent user_id=8421 template=welcome
+2026-03-24T10:16:45Z WARN  notification-service Email delayed user_id=8422 reason=queue_backlog
+2026-03-24T10:16:50Z ERROR notification-service Email failed user_id=8423 error=smtp_unreachable
+2026-03-24T10:17:00Z INFO  system Health check passed uptime=3600s
+2026-03-24T10:17:05Z DEBUG system Memory usage rss=512MB heap=256MB
+2026-03-24T10:17:10Z WARN  system High memory usage rss=1024MB
+2026-03-24T10:17:15Z ERROR system Out of memory
+Malformed log line without proper format
+2026-03-24T10:17:20Z INFO auth-service Missing double space after level
+2026-03-24T10:17:25Z INFO  auth-service User login successful user_id=9999 ip=10.0.0.1
+2026-03-24T10:17:30Z WARN  auth-service Suspicious login detected user_id=9999 ip=10.0.0.1
+2026-03-24T10:17:35Z ERROR payment-service Payment declined order_id=10001 amount=120.00 reason=insufficient_funds
+2026-03-24T10:17:40Z DEBUG inventory-service Reindexing inventory shard=3
+2026-03-24T10:17:45Z INFO  api-gateway Request completed path=/api/users status=200 duration_ms=180
+2026-03-24T10:17:50Z WARN  api-gateway Rate limit exceeded path=/api/users ip=10.0.0.2
+2026-03-24T10:17:55Z ERROR api-gateway Request failed path=/api/users status=503
+2026-03-24T10:18:00Z INFO  system Scheduled task started name=cleanup
+2026-03-24T10:18:05Z INFO  system Scheduled task completed name=cleanup duration_ms=500
