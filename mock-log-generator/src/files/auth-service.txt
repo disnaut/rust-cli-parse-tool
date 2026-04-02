@@ -1,0 +1,42 @@
+2026-03-24T10:15:32Z INFO  auth-service User login successful user_id=8421 ip=192.168.1.10
+INFO  auth-service User login successful user_id=1052 ip=10.0.0.5
+INFO  auth-service User login successful user_id=7777 ip=172.16.0.3
+WARN  auth-service Failed login attempt user_id=8421 ip=192.168.1.10 reason=invalid_password
+WARN  auth-service Failed login attempt user_id=1052 ip=10.0.0.5 reason=invalid_password
+WARN  auth-service Failed login attempt user_id=7777 ip=172.16.0.3 reason=invalid_password
+WARN  auth-service Failed login attempt user_id=8421 ip=192.168.1.10 reason=user_not_found
+WARN  auth-service Failed login attempt user_id=2222 ip=10.0.0.8 reason=user_not_found
+ERROR auth-service Failed login attempt user_id=8421 ip=192.168.1.10 reason=account_locked
+ERROR auth-service Failed login attempt user_id=3333 ip=172.16.0.9 reason=account_locked
+INFO  auth-service User logout user_id=8421
+INFO  auth-service User logout user_id=1052
+INFO  auth-service User logout user_id=7777
+INFO  auth-service Password reset requested user_id=8421 ip=192.168.1.10
+INFO  auth-service Password reset requested user_id=1052 ip=10.0.0.5
+INFO  auth-service Password reset successful user_id=8421
+INFO  auth-service Password reset successful user_id=1052
+ERROR auth-service Password reset failed user_id=8421 reason=token_expired
+ERROR auth-service Password reset failed user_id=1052 reason=invalid_token
+WARN  auth-service Suspicious login detected user_id=8421 ip=203.0.113.5
+WARN  auth-service Suspicious login detected user_id=1052 ip=198.51.100.23
+INFO  auth-service Multi-factor authentication required user_id=8421 method=sms
+INFO  auth-service Multi-factor authentication required user_id=1052 method=auth_app
+INFO  auth-service Multi-factor authentication success user_id=8421
+INFO  auth-service Multi-factor authentication success user_id=1052
+WARN  auth-service Multi-factor authentication failed user_id=8421 reason=incorrect_code
+WARN  auth-service Multi-factor authentication failed user_id=1052 reason=timeout
+INFO  auth-service Session expired user_id=8421
+INFO  auth-service Session expired user_id=1052
+INFO  auth-service Session created user_id=8421 session_id=abc123xyz
+INFO  auth-service Session created user_id=1052 session_id=def456uvw
+INFO  auth-service Session terminated user_id=8421 session_id=abc123xyz
+INFO  auth-service Session terminated user_id=1052 session_id=def456uvw
+INFO  auth-service Token issued user_id=8421 token_id=tok_98765
+INFO  auth-service Token issued user_id=1052 token_id=tok_12345
+INFO  auth-service Token revoked user_id=8421 token_id=tok_98765
+INFO  auth-service Token revoked user_id=1052 token_id=tok_12345
+ERROR auth-service Account locked user_id=8421 reason=too_many_attempts
+INFO  auth-service Account unlocked user_id=8421
+INFO  auth-service Email verification sent user_id=8421 email=user@example.com
+INFO  auth-service Email verification completed user_id=8421
+ERROR auth-service Email verification failed user_id=8421 reason=expired_link

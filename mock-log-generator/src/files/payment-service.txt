@@ -1,0 +1,10 @@
+INFO  payment-service Payment initiated order_id=10001 amount=49.99 currency=USD
+INFO  payment-service Payment processed successfully order_id=10001 amount=49.99
+WARN  payment-service Payment retry scheduled order_id=10002 reason=timeout
+ERROR payment-service Payment processing failed order_id=10002 amount=19.99 error=timeout
+ERROR payment-service Payment declined order_id=10003 amount=120.00 reason=insufficient_funds
+INFO  payment-service Refund issued order_id=10001 amount=49.99
+WARN  payment-service Duplicate payment detected order_id=10004
+INFO  payment-service Payment method updated user_id=8421 method=credit_card
+ERROR payment-service Currency conversion failed order_id=10005 from=EUR to=USD
+INFO  payment-service Payment settled order_id=10001 settlement_id=sett_555

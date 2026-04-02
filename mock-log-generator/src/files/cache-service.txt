@@ -1,0 +1,10 @@
+DEBUG cache-service Cache miss key=user_8421
+DEBUG cache-service Cache set key=user_8421 ttl=300
+DEBUG cache-service Cache hit key=user_8421
+INFO  cache-service Cache eviction key=user_1052 reason=ttl_expired
+WARN  cache-service Cache nearing capacity usage=95_percent
+ERROR cache-service Cache write failed key=user_9999 error=out_of_memory
+INFO  cache-service Cache cleared namespace=auth
+DEBUG cache-service Cache refresh key=user_8421
+WARN  cache-service Stale data detected key=user_8421
+INFO  cache-service Cache warmed key=user_7777

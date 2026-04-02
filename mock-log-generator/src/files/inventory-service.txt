@@ -1,0 +1,10 @@
+INFO  inventory-service Stock check item_id=554 quantity=12
+INFO  inventory-service Stock updated item_id=554 quantity=10
+WARN  inventory-service Low stock item_id=554 quantity=2
+ERROR inventory-service Failed to update stock item_id=554 error=database_locked
+INFO  inventory-service Item reserved item_id=554 order_id=10001
+INFO  inventory-service Item released item_id=554 order_id=10001
+WARN  inventory-service Inventory mismatch detected item_id=777 expected=10 actual=8
+INFO  inventory-service Reorder triggered item_id=554 threshold=5
+DEBUG inventory-service Reindexing inventory shard=3
+ERROR inventory-service Item not found item_id=9999

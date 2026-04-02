@@ -1,0 +1,10 @@
+INFO  system Health check passed uptime=3600s
+DEBUG system Memory usage rss=512MB heap=256MB
+WARN  system High memory usage rss=1024MB
+ERROR system Out of memory
+INFO  system CPU usage percent=45
+WARN  system High CPU usage percent=92
+INFO  system Disk usage percent=70
+WARN  system Disk nearing capacity percent=95
+ERROR system Disk write failure device=/dev/sda1
+INFO  system Scheduled task completed name=cleanup duration_ms=500

@@ -1,0 +1,10 @@
+INFO  notification-service Email sent user_id=8421 template=welcome
+WARN  notification-service Email delayed user_id=8422 reason=queue_backlog
+ERROR notification-service Email failed user_id=8423 error=smtp_unreachable
+INFO  notification-service SMS sent user_id=8421
+WARN  notification-service SMS delivery delayed user_id=8422
+ERROR notification-service Push notification failed user_id=8423 error=device_unreachable
+INFO  notification-service Notification queued user_id=8421 type=email
+DEBUG notification-service Retrying notification user_id=8423 attempt=2
+WARN  notification-service Notification dropped user_id=8423 reason=max_retries
+INFO  notification-service Digest sent user_id=8421

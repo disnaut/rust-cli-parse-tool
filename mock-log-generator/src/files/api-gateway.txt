@@ -1,0 +1,10 @@
+INFO  api-gateway Request received path=/api/orders method=GET
+INFO  api-gateway Request completed path=/api/orders status=200 duration_ms=230
+WARN  api-gateway Slow response detected path=/api/orders duration_ms=1200
+ERROR api-gateway Request failed path=/api/orders status=500
+WARN  api-gateway Rate limit exceeded path=/api/users ip=10.0.0.2
+INFO  api-gateway Request completed path=/api/users status=200 duration_ms=180
+ERROR api-gateway Upstream service unavailable path=/api/payments
+INFO  api-gateway Authentication successful user_id=8421
+WARN  api-gateway Authentication failed user_id=8421 reason=invalid_token
+DEBUG api-gateway Routing request path=/api/inventory target=inventory-service
